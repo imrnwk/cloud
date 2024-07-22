@@ -1,0 +1,99 @@
+:root {
+    --color-cyan: #14ffec;
+    --color-green: #0D7377;
+    --color-black: #212121;
+    --color-dark: #323232;
+    --color-light: #FFF;
+    --font: "Jura", sans-serif;
+    --weight-bold: 700;
+    --weight-regular: 300;
+    --size-64: 64px;
+    --size-48: 48px;
+    --size-36: 36px;
+    --size-24: 24px;
+    --size-20: 20px;
+    --size-16: 16px;
+    --size-14: 14px;
+    --size-12: 12px;
+    --border-radius-cube: 10px;
+    --border-radius-oval: 10pc;
+}
+
+body {
+    background-color: var(--color-black);
+    color: var(--color-light);
+    font-family: var(--font);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: var(--color-cyan);
+    font-size: var(--size-36);
+    margin-bottom: 20px;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: var(--size-16);
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: var(--border-radius-cube);
+    overflow: hidden;
+}
+
+.styled-table thead tr {
+    background-color: var(--color-green);
+    color: var(--color-light);
+    text-align: left;
+    font-weight: var(--weight-bold);
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid var(--color-dark);
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: var(--color-dark);
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid var(--color-green);
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: var(--weight-bold);
+    color: var(--color-green);
+}
+
+
+.back {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    width: 170px;
+    height: 52px;
+    border-radius: var(--border-radius-cube);
+    border: 1px solid;
+    font-family: var(--font);
+    font-size: var(--size-16);
+    background-color: var(--color-cyan);
+    color: var(--color-black);
+    transition: all 0.5s ease;
+}
+
+.back:hover {
+    background-color: var(--color-black);
+    color: var(--color-light);
+    border-color: 1px solid var(--color-light);
+}

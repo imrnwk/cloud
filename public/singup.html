@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="imrnwk" content="cloud, initial-scale=1.0">
+    <title>cloud sing up</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/singup.css">
+</head>
+
+<body>
+
+    <a href="index.html">
+        <button class="back">Back</button>
+    </a>
+
+    <div id="particles-js"></div>
+
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form id="signUpForm">
+        <h3>Sign Up</h3>
+
+        <div class="inputdata">
+
+            <div class="assets">
+                <label for="username">Full name</label>
+                <input type="text" placeholder="First name and Last name" id="name" required>
+            </div>
+
+            <div class="assets">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Email or Phone" id="email" required>
+            </div>
+
+            <div class="assets">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Password" id="password" required>
+            </div>
+
+            <div class="assets">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" placeholder="Confirm Password" id="confirmPassword" required>
+            </div>
+
+        </div>
+
+        <p>You already have an account? <a href="login.html">Log in</a></p>
+
+        <button type="submit">Sign Up</button>
+
+        <p>Or With</p>
+
+        <div class="social">
+            <div class="go"><i class="fab fa-google"></i> <img src="img/Google, login icon.svg"> Google</div>
+            <div class="fb"><i class="fab fa-facebook"></i> Facebook</div>
+        </div>
+    </form>
+
+    <script src="https://zrtechsolutions.com/demo/html/technoit/assets/javascripts/particles.min.js"></script>
+    <script src="js/particule.js"></script>
+    <script src="js/singup.js"></script>
+</body>
+
+</html>

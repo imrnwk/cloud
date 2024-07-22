@@ -1,0 +1,223 @@
+:root {
+    --color-cyan: #14ffec;
+    --color-green: #0D7377;
+    --color-black: #212121;
+    --color-dark: #323232;
+    --color-light: #FFF;
+    --font: "Jura", sans-serif;
+    --weight-bold: 700;
+    --weigth-regular: 300;
+    --size-64: 64px;
+    --size-48: 48px;
+    --size-36: 36px;
+    --size-24: 24px;
+    --size-20: 20px;
+    --size-16: 16px;
+    --size-14: 14px;
+    --size-12: 12px;
+    --border-radius-cube: 10px;
+    --border-radius-oval: 10pc;
+}
+
+#particles-js {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-black);
+}
+
+.background {
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+.background .shape {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.shape:first-child {
+    background: linear-gradient(#14ffec,
+            #0D7377);
+    left: -80px;
+    top: -40px;
+}
+
+.shape:last-child {
+    background: linear-gradient(to right,
+            #ffffff,
+            #323232);
+    right: -50px;
+    bottom: -40px;
+}
+
+form {
+    height: 450px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.13);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: var(--border-radius-cube);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 0px 35px 80px;
+}
+
+form * {
+    font-family: var(--font);
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+form h3 {
+    font-size: var(--size-36);
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 30px;
+    font-size: var(--size-16);
+    font-weight: var(--weight-bold);
+}
+
+input {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: var(--size-14);
+    font-weight: var(--weigth-regular);
+}
+
+.inputdata {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+}
+
+::placeholder {
+    color: #e5e5e5;
+}
+
+button {
+    margin-top: 0px;
+    width: 100%;
+    background-color: var(--color-cyan);
+    color: var(--color-black);
+    padding: 15px 0;
+    font-size: var(--size-16);
+    font-weight: 600;
+    border-radius: var(--border-radius-cube);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--color-black);
+    color: var(--color-light);
+    border-color: 1px solid var(--color-light);
+}
+
+.social {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background: red;
+    width: 150px;
+    border-radius: 3px;
+    padding: 10px 5px 10px 5px;
+    background-color: rgba(255, 255, 255, 0.27);
+    color: var(--color-cyan);
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.social div:hover {
+    background-color: rgba(255, 255, 255, 0.47);
+}
+
+.social .fb {
+    margin-left: 25px;
+}
+
+.social i {
+    margin-right: 4px;
+}
+
+.social img {
+    width: 20px;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+p a {
+    color: var(--color-cyan);
+}
+
+.back {
+    position: fixed;
+    z-index: 999;
+    right: 20px;
+    top: 20px;
+    width: 170px;
+    height: 52px;
+    border-radius: var(--border-radius-cube);
+    border: 1px solid;
+    font-family: var(--font);
+    font-size: var(--size-16);
+    background-color: var(--color-cyan);
+    color: var(--color-black);
+    transition: all 0.5s ease;
+}
+
+.back:hover {
+    background-color: transparent;
+    color: var(--color-light);
+    border-color: 1px solid var(--color-light);
+}
